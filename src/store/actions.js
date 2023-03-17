@@ -1,5 +1,12 @@
 import axiosClient from '../axiosClient';
 
+export function randomMeals({commit}, meals){
+    axiosClient.get('random.php')
+    .then(({data}) => {
+     
+        commit('setRandomMeals', data.meals)
+    })
+}
 export function searchMeals({ commit }, keyword){
     axiosClient.get(`search.php?s=${keyword}`)
     .then(({data}) => {

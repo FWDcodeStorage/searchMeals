@@ -1,4 +1,6 @@
-
+export function setRandomMeals(state, meals){
+    state.randomMeals = meals || []
+}
 export function setSearchedMeals(state, meals){
     state.searchedMeals = meals || []
 }

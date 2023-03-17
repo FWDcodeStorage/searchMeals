@@ -4,6 +4,7 @@ export default {
 //     loading: false,
 //     data: []
 //    }
+    randomMeals: [],
     searchedMeals: [],
     mealsByLetter: [],
     mealsByIngredient: []
